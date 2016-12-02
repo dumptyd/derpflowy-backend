@@ -1,0 +1,4 @@
+public/bower_components
+public/bower.json
+node_modules
+.env

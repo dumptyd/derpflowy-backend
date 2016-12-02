@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.6.0/socket.io.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/collab.js"></script>
+  <title>Derpflowy</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">derpflowy</a>
+    </div> 
+    <!-- /.navbar-collapse -->
+  </nav>
+  <div class="container flowy-container" ng-app="flowy" ng-controller="flowyController">
+    <h3><strong>Home</strong></h3>
+    <div class="loading" ng-show="loading">Loading...</div>
+    <div class="addNew" ng-click="addNew()" ng-hide="elements.length || loading">+</div>
+    <element-directive arr="elements" updateremote="updateRemote" whichkey="whichKey" markcompleted="markCompleted" duplicate="duplicate" deletenode="deleteNode" addnote="addNote" removenote="removeNote" togglecollapse="toggleCollapse"></element-directive>
+  </div>
+  
+</body>
+
+</html>

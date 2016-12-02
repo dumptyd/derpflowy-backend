@@ -1,0 +1,33 @@
+{
+  "name": "derpflowy-backend",
+  "version": "1.0.0",
+  "description": "Manage your workflow",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Message: no test specified\" && exit 0",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "workflowy",
+    "todo"
+  ],
+  "author": "dumptyd",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "mongoose": "^4.6.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "pug": "^2.0.0-beta6",
+    "socket.io": "^1.7.1"
+  }
+}
